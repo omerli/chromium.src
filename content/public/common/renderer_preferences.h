@@ -154,6 +154,9 @@ struct CONTENT_EXPORT RendererPreferences {
 
   // Contry iso of the mobile network for content detection purpose.
   std::string network_contry_iso;
+
+  std::string nw_inject_js_doc_start;
+  std::string nw_inject_js_doc_end;
 };
 
 }  // namespace content

@@ -81,6 +81,7 @@ const char kLaunchWidth[] = "app.launch.width";
 const char kLayouts[] = "layouts";
 const char kManifestVersion[] = "manifest_version";
 const char kMatchAboutBlank[] = "match_about_blank";
+const char kInMainWorld[] = "in_main_world";
 const char kMatches[] = "matches";
 const char kMinimumChromeVersion[] = "minimum_chrome_version";
 const char kMinimumVersion[] = "minimum_version";
@@ -180,6 +181,11 @@ const char kWebviewAccessibleResources[] = "accessible_resources";
 const char kWebviewName[] = "name";
 const char kWebviewPartitions[] = "partitions";
 const char kWhitelist[] = "whitelist";
+const char kNWJSInternalFlag[] = "__nwjs_manifest";
+const char kNWJSInternalMainFilename[] = "__nwjs_filename";
+
+const char kNWJSMain[] = "main";
+const char kNWJSMixedContext[] = "mixed_context";
 
 }  // namespace manifest_keys
 
@@ -476,6 +482,8 @@ const char kInvalidMatch[] =
     "Invalid value for 'content_scripts[*].matches[*]': *";
 const char kInvalidMatchAboutBlank[] =
     "Invalid value for 'content_scripts[*].match_about_blank'.";
+const char kInvalidInMainWorld[] =
+    "Invalid value for 'content_scripts[*].in_main_world'.";
 const char kInvalidMatchCount[] =
     "Invalid value for 'content_scripts[*].matches'. There must be at least "
     "one match specified.";
